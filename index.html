@@ -6,8 +6,9 @@
     <title>Daily Journal</title>
     <link rel="stylesheet" href="styles/main.css">
 <body>
-    
-    <header><h1>Dear Diary...</h1>
+    <header>
+        <img src="./images/dearDiaryLogo.png" alt="Diary Logo">
+        <h1>Dear Diary...</h1>
     <h2>The Fascinating Chronology of the Life and Times of Barry Shovlin</h2>
     </header>
     <main class="main">
@@ -17,13 +18,18 @@
                <input type="date" name="journalDate" id="journalDate">
             </fieldset>
         </form>
-        <section class="text">
-            <article type="date" class="date">Date:</article>
-            <article type="text" class="concepts">Concepts Covered:</article>
-            <article type="textarea">Journal Entry</article>
-            <article>Mood</article>
-
-        </section>
+        <form action="">
+            <fieldset>
+                <label for="ConceptsCovered">Concepts Covered</label>
+                <input type="text" name="conceptsCovered" id="conceptsCovered">
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <input type="text" name="journalEntry" id="journalEntry">
+            </fieldset>
+        </form>
     </main>
 
     <footer>Copyright Barry Shovlin {<a href="https://github.com/BarryShovlin">Github</a>} </footer>
