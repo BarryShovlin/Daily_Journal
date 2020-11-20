@@ -7,31 +7,49 @@
     <link rel="stylesheet" href="styles/main.css">
 <body>
     <header>
-        <img src="./images/dearDiaryLogo.png" alt="Diary Logo">
+        <img class="logo" src="./images/51e7b125-48b0-4d22-b7e8-d05b51435cfe_200x200.png" alt="Diary Logo">
         <h1>Dear Diary...</h1>
-    <h2>The Fascinating Chronology of the Life and Times of Barry Shovlin</h2>
+    <h2>The Fascinating Chronology of NSS Student, Barry Shovlin</h2>
     </header>
     <main class="main">
         <form action="">
-            <fieldset>
+            <fieldset class="date">
                 <label for="journalDate">Date of Entry</label>
                <input type="date" name="journalDate" id="journalDate">
             </fieldset>
         </form>
         <form action="">
-            <fieldset>
+            <fieldset class="concept">
                 <label for="ConceptsCovered">Concepts Covered</label>
                 <input type="text" name="conceptsCovered" id="conceptsCovered">
             </fieldset>
         </form>
         <form action="">
-            <fieldset>
+            <fieldset class="entry">
                 <label for="journalEntry">Journal Entry</label>
-                <input type="text" name="journalEntry" id="journalEntry">
+                <textarea name="journalEntry" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <div class="mood"><label for="moodForTheDay">Mood For The Day</label><br></div>
+                <select name="mood" id="moodForTheDay">
+                    <option value="select">How do you feel?</option>
+                    <option value="happy">Happy Happy Joy Joy!!!</option>
+                    <option value="sad">This is my worst day...</option>
+                    <option value="nervous">S'nervous</option>
+                </select>
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <div class="submit"><label for="submitButton">Archive This Chapter</label><br>
+                <button type="button">Record This Entry</button></div>
             </fieldset>
         </form>
     </main>
 
-    <footer>Copyright Barry Shovlin {<a href="https://github.com/BarryShovlin">Github</a>} </footer>
+    <footer>Copyright Barry Shovlin 2020 {<a href="https://github.com/BarryShovlin">Github</a>} </footer>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>

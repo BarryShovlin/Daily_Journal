@@ -1,0 +1,30 @@
+header {
+    text-align: center;
+    font-family: luminary, fantasy;
+    font-size: 130%;
+    color: wheat;
+}
+
+body {
+    background-color: rgb(100, 60, 32);
+}
+main {
+    font-family: luminary, fantasy;
+    color: wheat;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: center;
+}
+
+.submit {
+    margin-bottom: 200px;
+    text-align: center;
+    font-size: 200%;
+}
+footer {
+    color: wheat;
+    text-align: center;
+}
