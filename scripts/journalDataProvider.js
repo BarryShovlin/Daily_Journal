@@ -1,4 +1,4 @@
-const journal = [
+let journal = [
     {
         id: 1,
         date: "07/24/2025",
@@ -31,4 +31,12 @@ export const useJournalEntries = () => {
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
     return sortedByDate
+}
+
+export const getEntries = () => {
+    return fetch("http://localhost:8088/entries") // Fetch from the API
+        .then(response => response.json())  
+        .then(parsedjournal => {
+            journal = parsedjournal
+        })
 }
